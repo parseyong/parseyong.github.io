@@ -33,5 +33,10 @@ git clone :  주소 전달<br>
  2. git commit -m " "<br>
  3. git push<br>
 
+<h1>오류 해결방법</h1>
+1. error: failed to push some refs to <br>
+    -> git pull origin (branch 이름) --allow-unrelated-histories 입력후 push<br>
+2. warning: LF will be replaced by CRLF in inu-files/.gitignore. The file will have its original line endings in your working directory<br>
+   -> git config --global core.autocrlf true 입력
 
 
