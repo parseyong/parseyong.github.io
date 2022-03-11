@@ -18,7 +18,7 @@ categories: jekyll update
 &lt;i&gt; : 기울임꼴 <br>
 &lt;u&gt; : 밑줄 <br>
 &lt;big&gt; : 글자 크게 <br>
-&lt;mark&gt; : 형광펜 효과
+&lt;mark&gt; :  <mark>형광펜 효과</mark>
  <h1> <font color="00FFF">git 명령어</font> </h1>
 git branch : 브랜치 생성<br>
 git add :  추가<br>
