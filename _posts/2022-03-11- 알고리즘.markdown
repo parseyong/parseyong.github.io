@@ -28,5 +28,10 @@ git pull : github  다운로드<br>
 git remote -v : 연결되어있는 원격저장소의 정보확인<br>
 git clone :  주소 전달<br>
 
+<h1>github 등록방법</h1>
+ 1. git add . <br>
+ 2. git commit -m " "<br>
+ 3. git push<br>
+
 
 
