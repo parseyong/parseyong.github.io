@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "git 명령어"
+date:   2022-03-11 18:25:37 +0900
+categories: jekyll update
+---
+# git 명령어
+*'git add':
+*git pull : github 다운로드
+*git commit: -m "message"
+*git push : github 업로드
+*git init
+*git clone
+*git log
+*git branch
+*git checkout
+*git 
+1asfdaf<br>
+수정 완료
