@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "컴퓨터 알고리즘 과제"
+date:   2022-03-24 15:25:37 +0900
+categories: jekyll update
+---
+# 분할정복 알고리즘.
+
+
+

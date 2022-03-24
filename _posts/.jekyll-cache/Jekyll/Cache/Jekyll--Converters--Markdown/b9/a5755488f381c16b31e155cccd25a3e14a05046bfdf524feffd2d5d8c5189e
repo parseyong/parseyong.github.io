@@ -1,0 +1,25 @@
+I"�<h1 id="20220311-수업-요점정리">2022.03.11 수업 요점정리</h1>
+<h1> <font color="00FFF">마크업 태그 종류 </font> </h1>
+<h2><u> 특수문자 태그 </u></h2>
+<p>&amp;lt; : &lt; &lt;/br&gt;
+ &amp;gt; : &gt; &lt;/br&gt;
+ &amp;amp; :&amp; &lt;/br&gt;</p>
+<h2> <u>글자 크기</u></h2>
+<p>&lt;h1&gt; ~ &lt;h6&gt; 글자크기 ,숫자가 커질수록 크기가 작아짐 &lt;/br&gt;</p>
+
+<h2><u>글자 태그 </u></h2>
+<p>&lt;b&gt; , &lt;strong&gt; : 진하게 &lt;/br&gt;
+&lt;i&gt; : 기울임꼴 &lt;/br&gt;
+&lt;u&gt; : 밑줄 &lt;/br&gt;
+&lt;big&gt; : 글자 크게 &lt;/br&gt;
+&lt;mark&gt; : 형광펜 효과</p>
+<h1> <font color="00FFF">git 명령어</font> </h1>
+<p>git branch : 브랜치 생성&lt;/br&gt;
+git add :  추가&lt;/br&gt;
+git commit : 수정사항 저장&lt;/br&gt;
+git push : github 업로드&lt;/br&gt;
+git pull : github  다운로드&lt;/br&gt;
+git remote -v : 연결되어있는 원격저장소의 정보확인&lt;/br&gt;
+git clone :  주소 전달&lt;/br&gt;</p>
+
+:ET

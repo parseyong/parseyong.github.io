@@ -1,0 +1,40 @@
+I"�<h1 id="20220311-수업-요점정리">2022.03.11 수업 요점정리.</h1>
+<h1> <font color="00FFF">마크업 태그 종류 </font> </h1>
+<h2><u> 특수문자 태그 </u></h2>
+<p>&amp;lt; : ‘&lt;’   <br />
+ &amp;gt; : ‘&gt;’   <br />
+ &amp;amp; :’&amp;’   <br /></p>
+<h2> <u>글자 크기</u></h2>
+<p>&lt;h1&gt; ~ &lt;h6&gt; 글자크기 ,숫자가 커질수록 크기가 작아짐 &lt;/br&gt;</p>
+
+<h2><u>글자 태그 </u></h2>
+<p>&lt;b&gt; , &lt;strong&gt; : 진하게 <br />
+&lt;i&gt; : 기울임꼴 <br />
+&lt;u&gt; : 밑줄 <br />
+&lt;big&gt; : 글자 크게 <br />
+&lt;mark&gt; :  <mark>형광펜 효과</mark></p>
+<h1> <font color="00FFF">git 명령어</font> </h1>
+<p>git branch : 브랜치 생성<br />
+git add :  추가<br />
+git commit : 수정사항 저장<br />
+git push : github 업로드<br />
+git pull : github  다운로드<br />
+git remote -v : 연결되어있는 원격저장소의 정보확인<br />
+git clone :  주소 전달<br /></p>
+
+<h1>github 등록방법</h1>
+<ol>
+  <li>git add . <br /></li>
+  <li>git commit -m “ “<br /></li>
+  <li>git push<br /></li>
+</ol>
+
+<h1>오류 해결방법</h1>
+<ol>
+  <li>error: failed to push some refs to <br />
+ -&gt; git pull origin (branch 이름) –allow-unrelated-histories 입력후 push<br /></li>
+  <li>warning: LF will be replaced by CRLF in inu-files/.gitignore. The file will have its original line endings in your working directory<br />
+-&gt; git config –global core.autocrlf true 입력</li>
+</ol>
+
+:ET

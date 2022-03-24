@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-03-24T17:55:51+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">컴퓨터 알고리즘 과제</title><link href="http://localhost:4000/jekyll/update/2022/03/24/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EA%B3%BC%EC%A0%9C.html" rel="alternate" type="text/html" title="컴퓨터 알고리즘 과제" /><published>2022-03-24T15:25:37+09:00</published><updated>2022-03-24T15:25:37+09:00</updated><id>http://localhost:4000/jekyll/update/2022/03/24/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EA%B3%BC%EC%A0%9C</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/03/24/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EA%B3%BC%EC%A0%9C.html"><![CDATA[<h1 id="분할정복-알고리즘">분할정복 알고리즘.</h1>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[분할정복 알고리즘.]]></summary></entry><entry><title type="html">컴퓨터 알고리즘 과제</title><link href="http://localhost:4000/jekyll/update/2022/03/11/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.html" rel="alternate" type="text/html" title="컴퓨터 알고리즘 과제" /><published>2022-03-11T18:25:37+09:00</published><updated>2022-03-11T18:25:37+09:00</updated><id>http://localhost:4000/jekyll/update/2022/03/11/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/03/11/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.html"><![CDATA[<h1 id="20220311-수업-요점정리">2022.03.11 수업 요점정리</h1>
+<h1> <font color="00FFF">마크업 태그 종류 </font> </h1>
+<h2><u> 특수문자 태그 </u></h2>
+<p>&amp;lt; : ‘&lt;’   <br />
+ &amp;gt; : ‘&gt;’   <br />
+ &amp;amp; :’&amp;’   <br /></p>
+<h2> <u>글자 크기</u></h2>
+<p>&lt;h1&gt; ~ &lt;h6&gt; 글자크기 ,숫자가 커질수록 크기가 작아짐 &lt;/br&gt;</p>
+
+<h2><u>글자 태그 </u></h2>
+<p>&lt;b&gt; , &lt;strong&gt; : 진하게 <br />
+&lt;i&gt; : 기울임꼴 <br />
+&lt;u&gt; : 밑줄 <br />
+&lt;big&gt; : 글자 크게 <br />
+&lt;mark&gt; :  <mark>형광펜 효과</mark></p>
+<h1> <font color="00FFF">git 명령어</font> </h1>
+<p>git branch : 브랜치 생성<br />
+git add :  추가<br />
+git commit : 수정사항 저장<br />
+git push : github 업로드<br />
+git pull : github  다운로드<br />
+git remote -v : 연결되어있는 원격저장소의 정보확인<br />
+git clone :  주소 전달<br /></p>
+
+<h1>github 등록방법</h1>
+<ol>
+  <li>git add . <br /></li>
+  <li>git commit -m “ “<br /></li>
+  <li>git push<br /></li>
+</ol>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[2022.03.11 수업 요점정리 마크업 태그 종류 특수문자 태그 &amp;lt; : ‘&lt;’ &amp;gt; : ‘&gt;’ &amp;amp; :’&amp;’ 글자 크기 &lt;h1&gt; ~ &lt;h6&gt; 글자크기 ,숫자가 커질수록 크기가 작아짐 &lt;/br&gt;]]></summary></entry><entry><title type="html">컴퓨터 알고리즘 과제</title><link href="http://localhost:4000/jekyll/update/2022/03/11/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EA%B3%BC%EC%A0%9C.html" rel="alternate" type="text/html" title="컴퓨터 알고리즘 과제" /><published>2022-03-11T18:25:37+09:00</published><updated>2022-03-11T18:25:37+09:00</updated><id>http://localhost:4000/jekyll/update/2022/03/11/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EA%B3%BC%EC%A0%9C</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/03/11/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EA%B3%BC%EC%A0%9C.html"><![CDATA[<h1 id="20220311-수업-요점정리">2022.03.11 수업 요점정리.</h1>
+<h1> <font color="00FFF">마크업 태그 종류 </font> </h1>
+<h2><u> 특수문자 태그 </u></h2>
+<p>&amp;lt; : ‘&lt;’   <br />
+ &amp;gt; : ‘&gt;’   <br />
+ &amp;amp; :’&amp;’   <br /></p>
+<h2> <u>글자 크기</u></h2>
+<p>&lt;h1&gt; ~ &lt;h6&gt; 글자크기 ,숫자가 커질수록 크기가 작아짐 &lt;/br&gt;</p>
+
+<h2><u>글자 태그 </u></h2>
+<p>&lt;b&gt; , &lt;strong&gt; : 진하게 <br />
+&lt;i&gt; : 기울임꼴 <br />
+&lt;u&gt; : 밑줄 <br />
+&lt;big&gt; : 글자 크게 <br />
+&lt;mark&gt; :  <mark>형광펜 효과</mark></p>
+<h1> <font color="00FFF">git 명령어</font> </h1>
+<p>git branch : 브랜치 생성<br />
+git add :  추가<br />
+git commit : 수정사항 저장<br />
+git push : github 업로드<br />
+git pull : github  다운로드<br />
+git remote -v : 연결되어있는 원격저장소의 정보확인<br />
+git clone :  주소 전달<br /></p>
+
+<h1>github 등록방법</h1>
+<ol>
+  <li>git add . <br /></li>
+  <li>git commit -m “ “<br /></li>
+  <li>git push<br /></li>
+</ol>
+
+<h1>오류 해결방법</h1>
+<ol>
+  <li>error: failed to push some refs to <br />
+ -&gt; git pull origin (branch 이름) –allow-unrelated-histories 입력후 push<br /></li>
+  <li>warning: LF will be replaced by CRLF in inu-files/.gitignore. The file will have its original line endings in your working directory<br />
+-&gt; git config –global core.autocrlf true 입력</li>
+</ol>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[2022.03.11 수업 요점정리. 마크업 태그 종류 특수문자 태그 &amp;lt; : ‘&lt;’ &amp;gt; : ‘&gt;’ &amp;amp; :’&amp;’ 글자 크기 &lt;h1&gt; ~ &lt;h6&gt; 글자크기 ,숫자가 커질수록 크기가 작아짐 &lt;/br&gt;]]></summary></entry></feed>
