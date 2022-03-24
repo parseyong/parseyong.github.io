@@ -1,0 +1,7 @@
+// Place your key bindings in this file to override the defaults
+[
+    // Compile
+    { "key": "ctrl+alt+c", "command": "workbench.action.tasks.build" }, 
+    // Run
+    { "key": "ctrl+alt+r", "command": "workbench.action.tasks.test" }
+]

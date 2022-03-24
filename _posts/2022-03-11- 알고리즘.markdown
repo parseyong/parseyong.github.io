@@ -1,0 +1,38 @@
+---
+layout: post
+title:  "컴퓨터 알고리즘 과제"
+date:   2022-03-11 18:25:37 +0900
+categories: jekyll update
+---
+# 2022.03.11 수업 요점정리
+<h1> <font color="00FFF">마크업 태그 종류 </font> </h1>
+ <h2><u> 특수문자 태그 </u></h2>
+ &amp;lt; : '<'   <br>
+ &amp;gt; : '>'   <br>
+ &amp;amp; :'&'   <br>
+<h2> <u>글자 크기</u></h2>
+&lt;h1&gt; ~ &lt;h6&gt; 글자크기 ,숫자가 커질수록 크기가 작아짐 </br>
+
+<h2><u>글자 태그 </u></h2>
+&lt;b&gt; , &lt;strong&gt; : 진하게 <br>
+&lt;i&gt; : 기울임꼴 <br>
+&lt;u&gt; : 밑줄 <br>
+&lt;big&gt; : 글자 크게 <br>
+&lt;mark&gt; :  <mark>형광펜 효과</mark>
+ <h1> <font color="00FFF">git 명령어</font> </h1>
+git branch : 브랜치 생성<br>
+git add :  추가<br>
+git commit : 수정사항 저장<br>
+git push : github 업로드<br>
+git pull : github  다운로드<br>
+git remote -v : 연결되어있는 원격저장소의 정보확인<br>
+git clone :  주소 전달<br>
+
+<h1>github 등록방법</h1>
+ 1. git add . <br>
+ 2. git commit -m " "<br>
+ 3. git push<br>
+ 
+
+
+
