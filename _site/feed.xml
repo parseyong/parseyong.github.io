@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-03-24T20:32:56+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">3월 24일 컴퓨터 알고리즘 과제</title><link href="http://localhost:4000/jekyll/update/2022/03/24/%EB%B6%84%ED%95%A0%EC%A0%95%EB%B3%B5-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.html" rel="alternate" type="text/html" title="3월 24일 컴퓨터 알고리즘 과제" /><published>2022-03-24T15:25:37+09:00</published><updated>2022-03-24T15:25:37+09:00</updated><id>http://localhost:4000/jekyll/update/2022/03/24/%EB%B6%84%ED%95%A0%EC%A0%95%EB%B3%B5%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/03/24/%EB%B6%84%ED%95%A0%EC%A0%95%EB%B3%B5-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.html"><![CDATA[<html>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-04-05T00:24:15+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">3월 24일 컴퓨터 알고리즘 과제</title><link href="http://localhost:4000/jekyll/update/2022/03/24/%EB%B6%84%ED%95%A0%EC%A0%95%EB%B3%B5-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.html" rel="alternate" type="text/html" title="3월 24일 컴퓨터 알고리즘 과제" /><published>2022-03-24T15:25:37+09:00</published><updated>2022-03-24T15:25:37+09:00</updated><id>http://localhost:4000/jekyll/update/2022/03/24/%EB%B6%84%ED%95%A0%EC%A0%95%EB%B3%B5%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/03/24/%EB%B6%84%ED%95%A0%EC%A0%95%EB%B3%B5-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.html"><![CDATA[<html>
 <body>
 <h1>분할정복 알고리즘.</h1>
 <h2><u> 합병 정렬 </u></h2>
@@ -6,7 +6,7 @@
 &lt;/br&gt;
 n개의 숫자들을 n/2개씩 2개의 부분문제로 분할하고 각각의 부분문제를 재귀적으로 합병 정렬한 후 2개의 정렬된 부분을 합병하여 정렬한다.&lt;/br&gt;
 
-<img src="2.html" />
+<img src="2.jpg" />
 
 더이상 나눌수 없을때까지 나눈뒤 두 숫자를 비교하면서 conquer를 진행한다 왼쪽숫자가 오른쪽보다 클때 좌우 위치를 바꾼다.&lt;/br&gt;
 <img src="imgs.jpg" />
@@ -20,7 +20,7 @@ n개의 숫자들을 n/2개씩 2개의 부분문제로 분할하고 각각의 �
 <h2><u>소스코드 </u></h2>
 합병정렬 소스코드&lt;/br&gt;
 
- <script>
+ 
 	 import java.util.*;
     public class mergesort {
 	public static void main(String[] args) {
@@ -30,13 +30,13 @@ n개의 숫자들을 n/2개씩 2개의 부분문제로 분할하고 각각의 �
 	}
 	
 	static void printArray(int[] array) { //배열을 프린트해주는 함수
-		for(int a = 0; a < array.length; a++) {
+		for(int a = 0; a &lt; array.length; a++) {
 			System.out.print(array[a]+" ");
 		}
 	}
 	
 	static void mergesort(int[] array, int start, int end) {//재귀함수
-		if(start<end) { //배열을 두개로 나누는 과정
+		if(start&lt;end) { //배열을 두개로 나누는 과정
 			int mid = (start + end)/2;
 			mergesort(array,start,mid);
 			mergesort(array,mid+1,end);
@@ -49,8 +49,8 @@ n개의 숫자들을 n/2개씩 2개의 부분문제로 분할하고 각각의 �
 		int i = start; // 두개로 나누었을 때 왼쪽 배열 첫값
 		int k = start; // 새로 들어갈 배열의 첫번째 자리
 		int j = mid + 1; // 두개로 나누었을 때 오른쪽 배열 첫값
-		while(i<=mid && j<=end) {
-			if(array[i] < array[j]) {
+		while(i&lt;=mid &amp;&amp; j&lt;=end) {
+			if(array[i] &lt; array[j]) {
 				temp[k] = array[i];
 				i++;
 			}
@@ -61,23 +61,23 @@ n개의 숫자들을 n/2개씩 2개의 부분문제로 분할하고 각각의 �
 			k++;
 			
 		}
-		if(i>mid) {
-			for(int a=j; a<=end;a++,k++) {
+		if(i&gt;mid) {
+			for(int a=j; a&lt;=end;a++,k++) {
 				temp[k] = array[a];
 			}
 		}
 		else {
-			for(int a=i; a<=mid;a++,k++) {
+			for(int a=i; a&lt;=mid;a++,k++) {
 				temp[k] = array[a];
 			}
 		}
-		for(int a = start; a<=end; a++) {
+		for(int a = start; a&lt;=end; a++) {
 			array[a] = temp[a];	
 		}
 	}
     } 
 	
-</script>
+
 
 퀵정렬 소스코드&lt;/br&gt;
 
