@@ -78,7 +78,121 @@ while (bfs(source, sink)) {
     }
     return max_flow;
 ```
+포드-풀커슨 알고리즘 소스코드<br>
+```
+#include <stdio.h>
+
+#define A 0
+#define B 1
+#define C 2
+#define MAX_NODES 1000
+#define O 1000000000
+
+int n; //정점개수
+int e; // 간선 개수
+int capacity[MAX_NODES][MAX_NODES]; //용량
+int flow[MAX_NODES][MAX_NODES];  // 유량
+int as[MAX_NODES];
+int pred[MAX_NODES];
+
+int min(int x, int y) {
+    return x < y ? x : y; // x와 y중 작은 값 리턴
+}
+
+int head, tail;
+int q[MAX_NODES + 2];
+
+void enqueue(int x) {
+    q[tail] = x;
+    tail++;
+    as[x] = B;
+}
+
+int dequeue() {
+    int x = q[head];
+    head++;
+    as[x] = C;
+    return x;
+}
+
+int bfs(int start, int target) {
+    int u, v;
+    for (u = 0; u < n; u++) {
+        as[u] = A;
+    }
+    head = tail = 0;
+    enqueue(start);
+    pred[start] = -1;
+    while (head != tail) {
+        u = dequeue();
+        for (v = 0; v < n; v++) {
+            if (as[v] == A && capacity[u][v] - flow[u][v] > 0) {
+                enqueue(v);
+                pred[v] = u;
+            }
+        }
+    }
+    return as[target] == C; //증가경로 찾는 함수
+}
+
+int fordFulkerson(int source, int sink) {
+    int i, j, u;
+    int max_flow = 0;
+    for (i = 0; i < n; i++) {
+        for (j = 0; j < n; j++) {
+            flow[i][j] = 0; //   유량값 초기화 
+        }
+    }
+
+    while (bfs(source, sink)) {
+        int increment = O;
+        for (u = n - 1; pred[u] >= 0; u = pred[u]) {
+            increment = min(increment, capacity[pred[u]][u] - flow[pred[u]][u]); // 증가경로상에 있는 정점에 용량-유량값 대입
+        }
+        for (u = n - 1; pred[u] >= 0; u = pred[u]) {
+            flow[pred[u]][u] += increment;  
+            flow[u][pred[u]] -= increment;  //증가경로상에 있는 정점에 용량-유량값 대입, f(u,v)=-f(u,v)
+        }
+        max_flow += increment; 
+    }
+    return max_flow;
+}
+
+int main() {
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            capacity[i][j] = 0; //용량값 초기화
+        }
+    }
+    n = 6; //n은 정점의 개수 소스와 싱크 포함
+    e = 7; // e는 간선의 개수
+
+    capacity[0][1] = 10;
+    capacity[0][3] = 10;
+    capacity[1][2] = 15;
+    capacity[2][3] = 6;
+    capacity[2][5] = 10;
+    capacity[3][4] = 25;
+    capacity[4][5] = 10;  //용량값 지정
+    
+
+    int s = 0, t = 5; // s는 소스 t는 싱크
+    printf("최대 유량은: %d\n", fordFulkerson(s, t));
+}
+```
+
 실행결과 : <img src="실행결과.jpg">
+
+<h1>문제점 </h1>
+
+위의 소스코드에서는 증가경로를 찾는 방법을 bfs(너비우선탐색)방법을 사용헀다. 사실 포드-풀커슨알고리즘은 원래 dfs(깊이 우선탐색>방법을 이용해 증가경로를 찾는다. 그러나 dfs방법을 이용해 증가경로를 찾는 포드 풀커슨 알고리즘은 한가지 문제점이 있다.<br>
+<img src="그림6.jpg"><br>
+다음과 같은 그래프가 있다고 할때 증가경로가 S->A->B-T라면 하나의 증가경로당 용량-유량의 값은 1이되므로 수많은 증가경로가 나올것이다. 따라서 이것을 해결하기 위해 증가경로를 찾는방법을 bfs로 바꾸면 증가경로가 소스에서 링크까지의 최단경로로 설정이 되기때문에 S->A->T방향으로 한번에 많은 양의 유량을 흘려보낼수있다. 
+ 
+<h1>시간 복잡도</h1>
+DFS를 이용한 포드 풀커슨 알고리즘: O((E+V)F)<br>
+BFS를 이용한 포드 풀커슨 알고리즘: min( O(EF) , O(VE2) )<br>
+V=정점의 개수,E=간선의 개수,F=최대 유량
 
 
 
