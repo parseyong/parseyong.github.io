@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "기말고사 과제"
+title:  "기말고사  과제"
 date:   2022-06-17 17:10:37 +0900
 categories: jekyll update
 ---
